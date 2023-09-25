@@ -8,6 +8,10 @@
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppinns";
     --azul: #002F52;
+    --preto: #000000;
+    --fonte-secundario: "Josefin Sans";
+
+
 }
 body {
     background-color: var(--cor-de-fundo);
@@ -164,8 +168,125 @@ header {
     color: var(--branco);
     font-weight: 700;
     text-decoration: none;
+}
+.tópicos{
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1em 0;
+
+}
+.tópicos__titulo{
+    color: var(--branco);
+    font-weight: 300;
+    padding: 1em;
+    margin-bottom: 1em;
+
+}
+.tópicos__lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tópicos__item{
+    margin: 2em 0.5em;
+}
+.tópicos__link{
+    color: var(--branco);
+    padding: 1em;
+    background-color: var(--laranja);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+.contato{
+    background-color: var(--branco);
+    padding: 1em;
+}
+.contato__titulo{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;    
+}
+.contato__texto{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 1em 0;
+
+}
+.contato__email{
+    padding: 1em ;
+    border-radius: 24px;
+    border: 1px solid var(--azul);
+    width: 90%;  
+    color: var(--azul);
+
+}
+.contato__email::placeholder{
+    font-family: var(--fonte-principal);
+    color: var(--azul);
+    background: url(img/Email.svg) no-repeat;
+    padding-left: 3em ;
+        
+}
+hr {
+    margin: 0;
+}
+.rodape{
+    background-color: var(--branco);
+    padding: 1em;
+}
+.container__titulo{
+    display: none;
+}
+.opções{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+    .container__titulo,
+    .container__titulo--negrito{
+        font-family: var(--fonte-secundario);
+        font-size: 30px;        
+    } 
+    
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo--negrito{
+        font-weight: 700;
+    }
+    .opções{
+        display: flex;
+    }
+    .opções__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    .opções__link{
+        text-decoration: none;
+        color: black;
+
+    }
+    .container__imagem-transparente{
+        display: none;
+    }
+    .cabeçalho__menu-hamburguer{
+        display: none;
+    }
+
+
     
 }
+
+
+
 
 
 
